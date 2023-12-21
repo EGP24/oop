@@ -12,7 +12,6 @@ _deps
 .idea/.gitignore
 .idea/*
 .idea
-*/.idea
-*/.vscode
-*/cmake-build-debug
-*/cmake-build-release
+.vscode
+cmake-build-debug
+cmake-build-release
