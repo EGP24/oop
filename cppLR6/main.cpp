@@ -3,11 +3,14 @@
 #include "NoteTest.h"
 #include "NotebookTest.h"
 #include <iostream>
+#include <chrono>
 
 using namespace std;
 
 int main()
 {
+    auto start = chrono::steady_clock::now();
+
     testNote();
     testNotebook();
 
@@ -124,4 +127,8 @@ int main()
             }
         }
     } while (choice != 15);
+
+    auto end = chrono::steady_clock::now();
+    cout << "Затраченное время: ";
+    cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " миллисекунд" << endl;
 }
