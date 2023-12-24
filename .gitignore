@@ -19,9 +19,9 @@ _deps
 cmake-build-debug
 cmake-build-release
 
-*/.coverge
+*/.coverage
 */htmlcov
 */.pytest_cache
 .pytest_cache
 htmlcov
-.coverge
+.coverage
