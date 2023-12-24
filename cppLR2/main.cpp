@@ -1,12 +1,14 @@
 #include "Matrix.h"
 #include "MatrixTest.h"
 #include <iostream>
+#include <chrono>
 
 using namespace std;
 
 
 int main(int argc, char* argv[])
 {
+    auto start = chrono::steady_clock::now();
     testMatrix();
 
     int choice = 20;
@@ -154,4 +156,8 @@ int main(int argc, char* argv[])
             }
         }
     } while (choice != 20);
+
+    auto end = chrono::steady_clock::now();
+    cout << "Затраченное время: ";
+    cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " миллисекунд\n";
 }
