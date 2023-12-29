@@ -18,4 +18,6 @@ add_executable(untitled3 main.cpp
         TestTriangle.h
         TestTetragon.cpp
         TestTetragon.h
+        LogDuration.cpp
+        LogDuration.h
 )
