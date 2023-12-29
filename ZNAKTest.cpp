@@ -1,7 +1,7 @@
 #include "ZNAK.h"
+#include "LogDuration.h"
 #include <cassert>
 #include <sstream>
-#include <iostream>
 
 using namespace std;
 
@@ -112,6 +112,7 @@ void testOperatorOutput() {
 }
 
 void testZNAK() {
+    LOG_DURATION("Test ZNAK");
     testGetFirstName();
     testGetLastName();
     testGetZodiacSign();

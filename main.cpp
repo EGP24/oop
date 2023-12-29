@@ -13,8 +13,6 @@ bool cmp(const ZNAK& z1, const ZNAK& z2) {
 }
 
 int main(int argc, char* argv[]) {
-    auto start = chrono::steady_clock::now();
-
     testZNAK();
 
     setlocale(LC_ALL, "Russian");
@@ -37,11 +35,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    if (!findFlag) {
+    if (!findFlag)
         cout << "Людей с таким месяцем рождения не найдено.";
-    }
-
-    auto end = chrono::steady_clock::now();
-    cout << "Затраченное время: ";
-    cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " миллисекунд" << endl;
 }
