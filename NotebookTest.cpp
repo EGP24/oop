@@ -1,5 +1,6 @@
 #include "Notebook.h"
 #include "Note.h"
+#include "LogDuration.h"
 #include <sstream>
 
 using namespace std;
@@ -380,6 +381,7 @@ void testIterator() {
 }
 
 void testNotebook() {
+    LOG_DURATION("Test Notebook");
     testSelectNoteBy();
     testAddNote();
     testDeleteNoteBy();

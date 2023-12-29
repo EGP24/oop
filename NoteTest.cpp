@@ -1,7 +1,7 @@
 #include "Note.h"
 #include "NoteTest.h"
+#include "LogDuration.h"
 #include <cassert>
-#include <iostream>
 #include <sstream>
 #include <string>
 
@@ -170,6 +170,7 @@ void testOperatorOutput() {
 }
 
 void testNote() {
+    LOG_DURATION("Test Note");
     testGetFirstname();
     testGetLastname();
     testGetPhone();
