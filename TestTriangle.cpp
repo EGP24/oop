@@ -1,5 +1,6 @@
 #include "TestTriangle.h"
 #include "Triangle.h"
+#include "LogDuration.h"
 #include <string>
 #include <cassert>
 
@@ -112,6 +113,7 @@ void testGetYsTriangle() {
 
 
 void testTriangle() {
+    LOG_DURATION("Test Triangle");
     testAreaTriangle();
     testIsIntersectTriangle();
     testMoveTriangle();

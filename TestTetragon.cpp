@@ -1,5 +1,6 @@
 #include "TestTetragon.h"
 #include "Tetragon.h"
+#include "LogDuration.h"
 #include <cassert>
 
 void testAreaTetragon() {
@@ -112,6 +113,7 @@ void testGetYsTetragon() {
 
 
 void testTetragon() {
+    LOG_DURATION("Test Tetragon");
     testAreaTetragon();
     testIsIntersectTetragon();
     testMoveTetragon();
