@@ -1,5 +1,6 @@
 #include "MatrixTest.h"
 #include "Matrix.h"
+#include "LogDuration.h"
 #include <cassert>
 
 using  namespace std;
@@ -364,6 +365,7 @@ void testOperatorDivideByNumberEqual() {
 }
 
 void testMatrix() {
+    LOG_DURATION("Test Matrix");
     testIsSquare();
     testIsDiagonal();
     testIsZeroMatrix();
