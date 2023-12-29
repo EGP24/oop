@@ -1,5 +1,6 @@
 #include "SetTest.h"
 #include "Set.h"
+#include "LogDuration.h"
 #include <cassert>
 
 void testAdd() {
@@ -239,6 +240,7 @@ void testIterator() {
 }
 
 void testSet() {
+    LOG_DURATION("Test Set");
     testAdd();
     testRemove();
     testClear();
