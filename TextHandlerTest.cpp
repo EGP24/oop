@@ -1,8 +1,8 @@
 #include "TextHandlerTest.h"
 #include "TextHandler.h"
+#include "LogDuration.h"
 #include <vector>
 #include <string>
-#include <iostream>
 
 using namespace std;
 
@@ -55,6 +55,7 @@ void testGetSentences() {
 }
 
 void testTextHandler() {
+    LOG_DURATION("Test Text Handler");
     testSplitToSentencesText();
     testGetWordsOfSentence();
     testGetCountOfWordInSentence();
